@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyArRCyVFU6kMoLpGPVSO_ZapZR5z9VRkSk",
+        authDomain: "chat-app-e100b.firebaseapp.com",
+        databaseURL: "https://chat-app-e100b.firebaseio.com",
+        projectId: "chat-app-e100b",
+        storageBucket: "chat-app-e100b.appspot.com",
+        messagingSenderId: "416760995970",
+        appId: "1:416760995970:web:ad33aadbf6966b4b1f949b",
+        measurementId: "G-XSWTD9RTJJ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    
+</head>
+<body>
+
+    <div class="chat">
+
+        <div class="chat-title">
+            <h1>Chat Room</h1>
+            <h2>By Hunzala Ali</h2>
+            <figure class="avatar">
+              <img src="https://www.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Chat-2-512.png" /></figure>
+          </div>
+
+          <div class="messages">
+            <div class="messages-content">
+                <ul class="list" id="messages"></ul>
+
+            </div>
+          </div>
+
+          <div class="message-box">
+
+            <form class="message-input" onsubmit="return sendMessage();">
+                <input id="message" placeholder="Enter message" autocomplete="off">
+             
+                <input class="message-submit" type="submit">
+            </form>
+
+            <!-- <textarea type="text" class="message-input" id="message" placeholder="Type message..."></textarea>
+            <button type="submit" class="message-submit">Send</button> -->
+          </div>
+        
+
+    
+
+
+    
+    
+
+    </div>
+
+
+
+    
+
+<script src="app.js"></script>
+
+
+</body>
+</html>

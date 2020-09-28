@@ -17,6 +17,22 @@ const facebook_login = () =>{
       });
 }
 
+const google_login = () =>{
+
+    var provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        var user = result.user;
+        window.name = user.displayName;
+        console.log("user=====>", user.displayName)
+        window.location = 'chat.html'
+      }).catch(function(error) {
+        
+        console.log(error.message)
+      });
+
+}
+
 
 console.log("user=====>", window.name)
 var myName = window.name;
